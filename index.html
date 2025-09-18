@@ -1,72 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML AND CSS PROFILE </title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Flexboxt</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body> 
-    <header>
-        <div class="container">
-            <h2>Mr. Deepak Kumar </h2>
-            <nav>
-                <ul>
-                    
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                </ul>
-            </nav>
-        </div>
-    </header>
-   <div id="container-center">
-    <section id="about">
-        <div class="container">
-    <h2>About Me</h2>
-    <p>Hello! I am a passionate learner interested in web development.</p>
-    <h2 class="skills">
-        <span>HTML </span>
-        <span>CSS </span>
-        <span>JavaScript </span>
-    </h2>
+<body>
+  <h1>All Flexbox Concepts - Basic HTML Demo</h1>
+  <section>
+    <h2>1. Display: Flex</h2>
+    <hr>
+    <p>This enables Flexbox layout on a container.</p>
+    <div class="Flexbox">
+      <div class="box">Item1 </div>
+      <div class="box">Item2</div>
+      <div class="box">Item3</div>
     </div>
-    </section>
-  <section id="projects">
-    <div class="container">
-        <h2>Projects</h2>
-        <div class="projects">
-            <h3>Project One</h3>
-            <p>A simple Project Decripation Goes Here </p>
-            <a href="#">View Project</a>
-        </div>
-        </div>
-        <div class="container">
-        <h2>Projects</h2>
-        <div class="projects">
-            <h3>Project Two</h3>
-            <p>A simple Project Decripation Goes Here </p>
-            <a href="#">View Project</a>
-        </div>
-        </div>
+  </section>
+  <section>
+    <h2>2. Flex Direction </h2>
+    <hr>
+    <p>Direction of the main axis (row by default).</p>
+    <div class="Flexbox-column">
+      <div class="box-column">Item1 </div>
+      <div class="box-column">Item2</div>
+      <div class="box-column">Item3</div>
+  </section>
+  <section>
+    <h2>3. Justify Content</h2>
+    <hr>
+    <p>Controls alignment along the main axis (horizontal if flex-direction is row)..</p>
+    <div class="Flexbox-justify">
+      <div class="box-justify">Item1 </div>
+      <div class="box-justify">Item2</div>
+      <div class="box-justify">Item3</div>
+    </div>
+    <div class="start-end">
+      <div class="box-start-end">Start</div>
+      <div class="box-start-end">End</div>
+    </div>
+  </section>
+  <section>
+    <h2>4. Align Items</h2>
+    <hr>
+    <p>Controls alignment along the cross axis (vertical if flex-direction is row).</p>
+    <div class="Flexbox-align">
+      <div class="box-align">Item1 </div>
+      <div class="box-h">Item2</div>
+      <div class="box-align">Item3</div>
+    </div>
+  </section>
+  <section>
+    <h2>5. Flex Wrap</h2>
+    <hr>
+    <p>Allows items to wrap onto multiple lines if necessary.</p>
+    <div class="Flexbox-wrap">
+      <div class="box-wrap">Item1 </div>
+      <div class="box-wrap">Item2</div>
+      <div class="box-wrap">Item3</div>
+      <div class="box-wrap">Item4</div>
+      <div class="box-wrap">Item5</div>
+      <div class="box-wrap">Item6</div>
+    </div>
+  </section>
+  <section>
+    <h2>6. Gap</h2>
+    <hr>
+    <p>Space between items (row and column gap).</p>
+    <div class="Flexbox-gap">
+      <div class="box-gap">Item1 </div>
+      <div class="box-gap">Item2</div>
+      <div class="box-gap">Item3</div>
+  </section>
+  <section>
+    <h2>Flex Grow</h2>
+    <hr>
+    <p>Allows items to grow and fill available space.</p>
+    <div class="Flexbox-grow">
+      <div class="box-grow-1">Item1 </div>
+      <div class="box-grow-1">Item2</div>
+      <div class="box-grow-2">No Grow</div>
+  </section>
+  <section>
+    <h2>8. Flex Shrink</h2>
+    <hr>
+    <p>Allows items to shrink if necessary.</p>
+    <div class="Flexbox-shrink">
+      <div class="box-shrink-1">Item1 </div>
+      <div class="box-shrink-1">Item2</div>
+  </section>
+  <section>
+    <h2>9. Flex Basis</h2>
+    <p>Sets the initial size of a flex item before space is distributed.</p>
+    <hr>
+    <div class="Flexbox-basis"> 
+      <div class="box-basis-100">100px </div>
+      <div class="box-basis-150">150px</div>
+      <div class="box-basis-auto">Auto</div>
+  </section>
+ <section>
+  <h2>10. Order</h2>
+  <p>Controls the order in which items appear (visually).</p>
+
+  <div class="Flexbox-order">
+    <div class="box order-2">Order 2</div>
+    <div class="box order-1">Order 1</div>
+    <div class="box">Default</div>
+  </div>
 </section>
-<section id="contact">
-    <div class="container">
-        <h2>Contact Me</h2>
-        <form >
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required style="width:1003px; height:84px;"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </div>
-</section>
-</div>
-<section id="footer">
-    <div class="container">
-        <p>&copy; 2024 Mr. Deepak Kumar. All rights reserved.</p>
-    </div>
+<!-- Align Self -->
+<section>
+  <h2>11. Align Self</h2>
+  <p>Overrides align-items for individual items.</p>
+  <div class="align-self" style="height: 150px;">
+    <div class="box align-self-start">Top</div>
+    <div class="box center">Center</div>
+    <div class="box align-self-end">Bottom</div>
+  </div>
 </section>
 
 
